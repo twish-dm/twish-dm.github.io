@@ -20,6 +20,10 @@
       <div id="unity-warning"> </div>
     </div>
     <script>
+        if (window.Telegram.WebApp.platform == "ios" || window.Telegram.WebApp.platform == "android") {
+            window.Telegram.WebApp.expand();
+            window.Telegram.WebApp.requestFullscreen();
+        }
       var canvas = document.querySelector("#unity-canvas");
       
       // Shows a temporary message banner/ribbon for a few seconds, or

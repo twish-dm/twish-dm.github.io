@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/unity.loader.js";
+      var loaderUrl = buildUrl + "/twish-dm.github.io.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/unity.data",
-        frameworkUrl: buildUrl + "/unity.framework.js",
-        codeUrl: buildUrl + "/unity.wasm",
+        dataUrl: buildUrl + "/twish-dm.github.io.data",
+        frameworkUrl: buildUrl + "/twish-dm.github.io.framework.js",
+        codeUrl: buildUrl + "/twish-dm.github.io.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "state-based-template",
@@ -97,7 +97,7 @@
         canvas.style.width = (window.innerHeight / 16 * 9)  + 'px';
       }
 
-      canvas.style.background = "url('" + buildUrl + "/unity.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/twish-dm.github.io.jpg') center / cover";
       document.querySelector("#unity-loading-bar").style.display = "block";
 
       var script = document.createElement("script");

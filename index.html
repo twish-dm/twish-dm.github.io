@@ -25,6 +25,7 @@
             window.Telegram.WebApp.expand();
             window.Telegram.WebApp.requestFullscreen();
         }
+	window.Telegram.WebApp.isOrientationLocked = true;
         window.AdController = window.Adsgram.init({ blockId: "6300" });
         
       var canvas = document.querySelector("#unity-canvas");

@@ -31,10 +31,6 @@ https://github.com/sno/unity-webgl-responsive
       </div>
     </div>
 
-    <div class="info">
-      <p>unity webgl responsive</p>
-      <p>press F or <a href="#" onclick="myGameInstance.SetFullscreen(1)">click here</a> to toggle fullscreen</p>
-    </div>
 
     <!-- feel free to remove all credits! -->
     <div class="info">
@@ -45,7 +41,7 @@ https://github.com/sno/unity-webgl-responsive
     <script src="MyLoader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/91436b97b5b2e92d8e049d5dbc7007e9.data",
+        dataUrl: "Build/59233c0d1814db44412456b5f338cb98.data",
         frameworkUrl: "Build/d006e7226baf109e350e3a3a8b1887f0.framework.js",
         codeUrl: "Build/0af3cd18f31d2c489199e92a70ca645c.wasm",
         streamingAssetsUrl: "StreamingAssets",
@@ -53,7 +49,8 @@ https://github.com/sno/unity-webgl-responsive
         productName: "football-test",
         productVersion: "0.1",
       }).then((unityInstance) => {
-        myGameInstance = unityInstance;
+          myGameInstance = unityInstance;
+          myGameInstance.SetFullscreen(1);
       });
     </script>
 

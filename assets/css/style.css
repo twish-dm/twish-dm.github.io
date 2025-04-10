@@ -16,8 +16,8 @@ a {
 }
 
 .info {
-  width:100%;
-  padding:12px;
+  width:0;
+  padding:0px;
   box-sizing: border-box;
 }
 
@@ -26,7 +26,6 @@ a {
 .webgl-wrapper {
   display: inline-block;
   width: 100%;
-  max-width: 1280px; /* remove this line for full width */
   position: relative;
 }
 
